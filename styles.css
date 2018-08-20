@@ -6,6 +6,9 @@
   overflow: hidden;
   z-index: 4;
 }
+.col {
+  justify-content: center;
+}
 .nav-bar-sc a {
   float: right;
   display: block;
@@ -33,9 +36,7 @@
   
 }
 #thumbnails{
-  width:40%;
-  height:30%;
-  margin:5%;
+  height:300px;
 }
 
 #banner{
