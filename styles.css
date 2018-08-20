@@ -1,0 +1,62 @@
+.nav-bar-sc {
+  position: fixed; /* Set the navbar to fixed position */
+  /*Position the navbar at the top of the page */
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+  z-index: 4;
+}
+.nav-bar-sc a {
+  float: right;
+  display: block;
+}
+#nav-section{
+  background-color: grey;
+}
+#avatar-image{
+  width:50%;
+  height:80%;
+  border-radius: 100%;
+  
+}
+#contact-section{
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  
+}
+#port-section{
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  width: 80%;
+  
+}
+#thumbnails{
+  width:40%;
+  height:30%;
+  margin:5%;
+}
+
+#banner{
+  margin-top:5%;
+}
+
+h1, h2 {
+    font-family: 'Crimson Text', serif;
+    
+  }
+h1 {
+  font-size:64px;
+}
+h2 {
+  font-size:48px;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
+li {
+  list-style-type: none;
+}
+
