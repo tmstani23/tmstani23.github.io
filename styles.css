@@ -1,3 +1,8 @@
+#banner{
+  font-size:72px;
+  margin-top: 20px;
+  color: white;
+}
 .nav-bar-sc {
   position: fixed; /* Set the navbar to fixed position */
   /*Position the navbar at the top of the page */
@@ -5,9 +10,6 @@
   top: 0;
   overflow: hidden;
   z-index: 4;
-}
-.col {
-  justify-content: center;
 }
 .nav-bar-sc a {
   float: right;
@@ -17,9 +19,12 @@
   background-color: grey;
 }
 #avatar-image{
-  width:50%;
-  height:80%;
+  display: inline-block;
+  max-width:350px;
+  max-height:250px;
+  margin: 20px;
   border-radius: 100%;
+  border: 1px solid black;
   
 }
 #contact-section{
@@ -39,17 +44,13 @@
   height:300px;
 }
 
-#banner{
-  margin-top:5%;
-}
+
 
 h1, h2 {
     font-family: 'Crimson Text', serif;
     
   }
-h1 {
-  font-size:64px;
-}
+
 h2 {
   font-size:48px;
 }
