@@ -12,7 +12,7 @@ body {
 #banner{
   font-size:72px;
   color: var(--leather);
-   
+  border: 1px solid black;
 }
 .nav-bar-sc {
   position: fixed; /* Set the navbar to fixed position */
@@ -27,7 +27,6 @@ body {
 @media screen and (max-width: 800px) {
   .nav-bar-sc {
     display: block;
-    float:right;
     top: initial;
     position: initial;
   }
@@ -36,8 +35,10 @@ body {
   background-image: url(imgs/gradient2.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-color: var(--navy-blue);
+  border-top: 50px solid var(--navy-blue);
+  border-bottom: 50px solid var(--navy-blue);
   
 }
 #nav-section h2 {
@@ -92,11 +93,15 @@ a {
 }
 #port-button {
   
-  background-color: var(--leather);
+  background-color: var(--coral);
+}
+#skills-button {
+  
+  background-color: var(--coral);
 }
 #contact-button {
   
-  background-color: var(--navy-blue);
+  background-color: var(--coral);
 }
 
 h1 {
