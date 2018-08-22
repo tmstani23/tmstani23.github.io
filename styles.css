@@ -1,22 +1,50 @@
+:root {
+  --navy-blue:#0F1626;
+  --leather:#AB987A;
+  --coral:#FF533D;
+  --eggshell:#F5F5F5;
+  --black:#000000;
+}
+body {
+  background-color: var(--leather);
+}
+
 #banner{
   font-size:72px;
-  margin-top: 20px;
-  color: white;
+  color: var(--leather);
+   
 }
 .nav-bar-sc {
   position: fixed; /* Set the navbar to fixed position */
   /*Position the navbar at the top of the page */
-  width: 100%;
-  top: 0;
-  overflow: hidden;
-  z-index: 4;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: flex-end;
+  top:0;
 }
-.nav-bar-sc a {
-  float: right;
-  display: block;
+/*for small screens use fixed nav */
+@media screen and (max-width: 800px) {
+  .nav-bar-sc {
+    display: block;
+    float:right;
+    top: initial;
+    position: initial;
+  }
 }
 #nav-section{
-  background-color: grey;
+  background-image: url(imgs/gradient2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: var(--navy-blue);
+  
+}
+#nav-section h2 {
+  color: var(--eggshell);
+}
+#nav-section p {
+  color: var(--coral);
 }
 #avatar-image{
   display: inline-block;
@@ -44,19 +72,46 @@
   height:300px;
 }
 
+a {
+	color: var(--black);
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.btn {
+  font-family: 'Oswald', sans-serif;
+  color: var(--eggshell);
+  text-align: center;
+  margin: 5px;
+  width: 140px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid black;
+}
+#nav-button {
+  
+  background-color: var(--coral);
+}
+#port-button {
+  
+  background-color: var(--leather);
+}
+#contact-button {
+  
+  background-color: var(--navy-blue);
+}
 
-
-h1, h2 {
+h1 {
     font-family: 'Crimson Text', serif;
     
   }
 
 h2 {
+  font-family: 'Roboto', sans-serif;
   font-size:48px;
+  color: var(--eggshell)
 }
 p {
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
 }
 li {
   list-style-type: none;
