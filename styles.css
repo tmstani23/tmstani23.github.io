@@ -12,7 +12,6 @@ body {
 #banner{
   font-size:72px;
   color: var(--leather);
-  border: 1px solid black;
 }
 .nav-bar-sc {
   position: fixed; /* Set the navbar to fixed position */
@@ -60,17 +59,30 @@ body {
   border-color: grey;
   border-width: 2px;
   border-style: solid;
-  
+
 }
 #port-section{
   border-color: grey;
   border-width: 2px;
   border-style: solid;
+  
   width: 80%;
+  
+}
+.profile-pane {
+  margin:20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
   
 }
 #thumbnails{
   height:300px;
+  max-width: auto;
+  padding: 10px;
 }
 
 a {
