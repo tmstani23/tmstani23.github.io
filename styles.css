@@ -6,7 +6,7 @@
   --black:#000000;
 }
 body {
-  background-color: var(--leather);
+  background-color: var(--eggshell);
 }
 
 #banner{
@@ -21,6 +21,7 @@ body {
   margin-top: 10px;
   align-items: flex-end;
   top:0;
+  z-index: 4;
 }
 /*for small screens use fixed nav */
 @media screen and (max-width: 800px) {
@@ -73,16 +74,19 @@ body {
   margin:20px;
   border: 1px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-width: 350px;
   text-align: center;
   height: 600px;
-  
+  background-color: var(--leather);
+  overflow: auto;
+  padding: 30px;
 }
+
 #thumbnails{
-  height:300px;
-  max-width: auto;
-  padding: 10px;
+  min-height:300px;
+  max-height: 375px;
+  max-width: 100%;
 }
 
 a {
@@ -124,7 +128,7 @@ h1 {
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size:48px;
-  color: var(--eggshell)
+  color: var(--coral);
 }
 p {
   font-family: 'Open Sans Condensed', sans-serif;

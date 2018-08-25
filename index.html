@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+  <!-- Banner -->
   <div class="container-fluid" id="nav-section">
     <div class="row justify-content-center align-items-center">
       <div class="col-xs-2 ">
@@ -22,7 +22,7 @@
         </p>
       </div>
     </div>
-    
+    <!-- Responsive Nav -->
     <div class="row">
       <div class="col-md-12 text-center nav-bar-sc">
         <a href="#nav-section"; class="btn btn-info" id="nav-button" role="button">Navigation Section</a>
@@ -33,75 +33,129 @@
       </div>
     </div>
   </div>
-  
+  <!-- Portfolio Section -->
   <div class="container-fluid"; id="port-section">    
     <h2 class="text-center">Portfolio</h2>
     
+    <div class="row justify-content-center align-items-center">  
+      <!-- Highlighted Project -->
+      <div class="col-md-10 profile-pane" id="highlight-pane">
+          <figure>
+              <h3>Stay Alive Simulation</h3>
+              <a href="https://tmstani23.github.io/Stay-Alive-Simulation/">
+                <img src="https://raw.githubusercontent.com/tmstani23/Stay-Alive-Simulation/Development/scrn1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+              </a>
+              <figcaption>A screenshot of main canvas, statistics, and some of the adjustable variables.</figcaption>
+            </figure>
+            <h4>Summary Description:</h4>
+                <p>A simulation using evolutionary algorithms and autonomous steering.  The agents spawn with a unique genetic code that contains different values which effect their behavior in the environment.
+                    They have a value for desire for food and poison. They also have sight values for recognizing the food and poison in the environment within a given range.
+                    They move in straight lines and the desire for food or poison modifies their vectors towards or away the target
+                    once it is within their sight radius.  Each vehicle also has different min/max speed values in their genetic code.
+                    There is also a chance they will clone themselves and retain the same dna values. There is mutation which happens rarely and slightly modifies the genetic values of the agent at cloning. More healthy agents have twice the chance to clone themselves. </p>
+                <a href="https://github.com/tmstani23/Stay-Alive-Simulation">Project on Github</a>
+              <h4>Technologies Used:</h4>
+                <p>P5 JS, Javascript, HTML, CSS</p>
+      </div>
+    </div>
+
     <div class="row justify-content-center">  
       
-      <div class="col-md-4 profile-pane">
+      <div class="col-md-5 profile-pane">
         <figure>
           <h3>Bayes Predictor App</h3>
           <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
             <img src="https://raw.githubusercontent.com/tmstani23/Bayes-Predictor-JS/Development/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
           </a>
-          <figcaption>Here is a dummy caption.</figcaption>
+          <figcaption>A screenshot of the functional portion of the application.</figcaption>
         </figure>
+        <h4>Summary Description:</h4>
+            <p>A React application that calculates probabilities of events using Bayes' Theorem.  Users can input probabilities and generate a result based on Bayes' formula.  There is a section on how to use the app and what Baye's formula is. </p>
+            <a href="https://github.com/tmstani23/Bayes-Predictor-JS">Project at Github</a>
+          <h4>Technologies Used:</h4>
+            <p>React, Javascript, HTML, CSS Grid/Flexbox</p>
       </div>
       
-      <div class="col-md-4 profile-pane">
+      <div class="col-md-5 profile-pane">
         <figure>
-          <h3>Bayes Predictor App</h3>
-          <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
-            <img src="https://raw.githubusercontent.com/tmstani23/Bayes-Predictor-JS/Development/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+          <h3>Weatherscope</h3>
+          <a href="https://tmstani23.github.io/Local-Weather-App/">
+            <img src="https://raw.githubusercontent.com/tmstani23/Local-Weather-App/master/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
           </a>
-            <figcaption>Here is a dummy caption.</figcaption>
+            <figcaption>A screenshot of the application in use.</figcaption>
         </figure>
+        <h4>Summary Description:</h4>
+            <p>A simple weather app that displays weather based on user geolocation. </p>
+            <a href="https://github.com/tmstani23/Local-Weather-App">Project at Github</a>
+          <h4>Technologies Used:</h4>
+            <p>React, Babel, Javascript, HTML, CSS/Grid/Flexbox</p>
       </div>
 
     </div>
     
     <div class="row justify-content-center">  
-      <div class="col-md-4 profile-pane">
+      <div class="col-md-5 profile-pane">
           <figure>
-            <h3>Bayes Predictor App</h3>
-            <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
-              <img src="https://raw.githubusercontent.com/tmstani23/Bayes-Predictor-JS/Development/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+            <h3>Top Github Viewer</h3>
+            <a href="https://tmstani23.github.io/Top-Github-Viewer/">
+              <img src="https://raw.githubusercontent.com/tmstani23/Top-Github-Viewer/Development/img/ss1.jpg" class="img-fluid" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
             </a>
-            <figcaption>Here is a dummy caption.</figcaption>
+            <figcaption>The main page including navigation.</figcaption>
           </figure>
+          <h4>Summary Description:</h4>
+            <p>A dashboard viewer for viewing the top Github repositories (Javascript, Ruby, Python) based on their star count. </p>
+            <a href="https://github.com/tmstani23/Top-Github-Viewer">Project Github</a>
+          <h4>Technologies Used:</h4>
+            <p>React, Babel, Javascript, HTML, CSS</p>
         </div>
         
-        <div class="col-md-4 profile-pane">
+        <div class="col-md-5 profile-pane">
           <figure>
-            <h3>Bayes Predictor App</h3>
-            <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
-              <img src="https://raw.githubusercontent.com/tmstani23/Bayes-Predictor-JS/Development/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+            <h3>Pomodoro-JS</h3>
+            <a href="https://tmstani23.github.io/Pomodoro-JS/">
+              <img src="https://raw.githubusercontent.com/tmstani23/Pomodoro-JS/Development/screen1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
             </a>
-              <figcaption>Here is a dummy caption.</figcaption>
+              <figcaption>A screenshot of the timer in action.</figcaption>
           </figure>
+          <h4>Summary Description:</h4>
+            <p>A productivity timer to help you manage focus and breaks. </p>
+            <a href="https://github.com/tmstani23/Pomodoro-JS">Project at Github</a>
+          <h4>Technologies Used:</h4>
+            <p>Javascript, HTML, CSS</p>
         </div>
     </div>
     
     <div class="row justify-content-center">  
-      <div class="col-md-4 profile-pane">
+      <div class="col-md-5 profile-pane">
           <figure>
-            <h3>Bayes Predictor App</h3>
-            <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
-              <img src="https://raw.githubusercontent.com/tmstani23/Bayes-Predictor-JS/Development/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+            <h3>JS Calculator</h3>
+            <a href="https://tmstani23.github.io/JS-Calculator/">
+              <img src="https://raw.githubusercontent.com/tmstani23/JS-Calculator/master/calc1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
             </a>
-            <figcaption>Here is a dummy caption.</figcaption>
+            <figcaption>The calculator working in browser.</figcaption>
           </figure>
+          <h4>Summary Description:</h4>
+            <p>A calculator that runs in the browser.  The calculator includes chain functions and clearing last number as well as complete clear. </p>
+            <a href="https://github.com/tmstani23/JS-Calculator">Project at Github</a>
+          <h4>Technologies Used:</h4>
+            <p>Javascript, HTML, CSS</p>
+            
         </div>
         
-        <div class="col-md-4 profile-pane">
+        <div class="col-md-5 profile-pane">
           <figure>
-            <h3>Bayes Predictor App</h3>
-            <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
-              <img src="https://raw.githubusercontent.com/tmstani23/Bayes-Predictor-JS/Development/img/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+            <h3>Simon Memory Game</h3>
+            <a href="https://tmstani23.github.io/Simon-JS/">
+              <img src="https://raw.githubusercontent.com/tmstani23/Simon-JS/Development/screen1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
             </a>
-              <figcaption>Here is a dummy caption.</figcaption>
+              <figcaption>A screenshot of the game in progress.</figcaption>
           </figure>
+          <h4>Summary Description:</h4>
+            <p>A classic Simon Game Simplified </p>
+            <a href="https://github.com/tmstani23/Simon-JS">Project at Github</a>
+          <h4>Technologies Used:</h4>
+            <p>Javascript, HTML, CSS grid/flexbox</p>
+            
         </div>
     </div>
     
@@ -114,6 +168,11 @@
             </a>
             <figcaption>Here is a dummy caption.</figcaption>
           </figure>
+          <h4>Summary Description:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id fringilla libero. Fusce in sem porta, commodo dolor eu, blandit nisl. Curabitur ut nunc urna. Mauris ac cursus magna, ac vehicula diam. Morbi vulputate, libero vel pharetra efficitur </p>
+          <h4>Technologies Used:</h4>
+            <p>React, Javascript, HTML, CSS</p>
+            <a href="https://github.com/tmstani23/Top-Github-Viewer">Project Github</a>
         </div>
         
         <div class="col-md-5 profile-pane">
@@ -124,6 +183,11 @@
             </a>
               <figcaption>Here is a dummy caption.</figcaption>
           </figure>
+          <h4>Summary Description:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id fringilla libero. Fusce in sem porta, commodo dolor eu, blandit nisl. Curabitur ut nunc urna. Mauris ac cursus magna, ac vehicula diam. Morbi vulputate, libero vel pharetra efficitur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id fringilla libero. Fusce in sem porta, commodo dolor eu, blandit nisl. Curabitur ut nunc urna. Mauris ac cursus magna, ac vehicula diam. Morbi vulputate, libero vel pharetra efficitur</p>
+          <h4>Technologies Used:</h4>
+            <p>React, Javascript, HTML, CSS</p>
+            <a href="https://github.com/tmstani23/Top-Github-Viewer">Project Github</a>
         </div>
     </div>
         
