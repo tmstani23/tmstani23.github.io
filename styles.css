@@ -12,7 +12,6 @@ body {
 #banner{
   font-size:72px;
   color: var(--leather);
-  border: 1px solid black;
 }
 .nav-bar-sc {
   position: fixed; /* Set the navbar to fixed position */
@@ -22,6 +21,7 @@ body {
   margin-top: 10px;
   align-items: flex-end;
   top:0;
+  z-index: 4;
 }
 /*for small screens use fixed nav */
 @media screen and (max-width: 800px) {
@@ -60,21 +60,49 @@ body {
   border-color: grey;
   border-width: 2px;
   border-style: solid;
-  
+
 }
 #port-section{
   border-color: grey;
   border-width: 2px;
   border-style: solid;
+  background-color: var(--eggshell);
   width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
   
 }
+.profile-pane {
+  margin:20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  text-align: center;
+  height: 600px;
+  background-color: var(--navy-blue);
+  color: var(--eggshell);
+  overflow: auto;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-pane h3{
+  color: var(--coral);
+  font-size: 2em;
+}
+.profile-pane h4{
+  color: var(--coral)
+}
+
 #thumbnails{
-  height:300px;
+  min-height:300px;
+  max-height: 375px;
+  max-width: 100%;
 }
 
 a {
-	color: var(--black);
+	color: var(--leather);
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .btn {
@@ -112,7 +140,7 @@ h1 {
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size:48px;
-  color: var(--eggshell)
+  color: var(--coral);
 }
 p {
   font-family: 'Open Sans Condensed', sans-serif;
