@@ -6,7 +6,7 @@
   --black:#000000;
 }
 body {
-  background-color: var(--eggshell);
+  background-color: var(--leather);
 }
 
 #banner{
@@ -66,8 +66,10 @@ body {
   border-color: grey;
   border-width: 2px;
   border-style: solid;
-  
+  background-color: var(--eggshell);
   width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
   
 }
 .profile-pane {
@@ -78,9 +80,19 @@ body {
   min-width: 350px;
   text-align: center;
   height: 600px;
-  background-color: var(--leather);
+  background-color: var(--navy-blue);
+  color: var(--eggshell);
   overflow: auto;
+  border-radius: 5px;
   padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.profile-pane h3{
+  color: var(--coral);
+  font-size: 2em;
+}
+.profile-pane h4{
+  color: var(--coral)
 }
 
 #thumbnails{
@@ -90,7 +102,7 @@ body {
 }
 
 a {
-	color: var(--black);
+	color: var(--leather);
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .btn {
