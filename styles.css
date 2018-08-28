@@ -7,6 +7,7 @@
 }
 body {
   background-color: var(--leather);
+  margin-bottom: 0px;
 }
 
 #banner{
@@ -29,6 +30,12 @@ body {
     display: block;
     top: initial;
     position: initial;
+  }
+  .profile-pane {
+    margin: 0px;
+  }
+  #port-section {
+    width: 100%;
   }
 }
 #nav-section{
@@ -56,30 +63,36 @@ body {
   border: 1px solid black;
   
 }
+#skills-section{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+}
 #contact-section{
-  border-color: grey;
-  border-width: 2px;
-  border-style: solid;
+  margin:0 auto;
+  height: 400px;
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, rgb(144, 144, 144), rgb(46, 46, 46), rgb(246, 246, 246));
 
 }
 #port-section{
-  border-color: grey;
-  border-width: 2px;
-  border-style: solid;
-  background-color: var(--eggshell);
   width: 80%;
   margin: 0 auto;
   margin-top: 20px;
+  border-bottom: 1px solid var(--eggshell)
   
 }
 .profile-pane {
   margin:20px;
-  border: 1px solid black;
+  border: 1px solid var(--eggshell);
   display: flex;
   flex-direction: column;
   min-width: 350px;
   text-align: center;
-  height: 600px;
+  height: 800px;
   background-color: var(--navy-blue);
   color: var(--eggshell);
   overflow: auto;
@@ -87,6 +100,7 @@ body {
   padding: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .profile-pane h3{
   color: var(--coral);
   font-size: 2em;
@@ -99,6 +113,12 @@ body {
   min-height:300px;
   max-height: 375px;
   max-width: 100%;
+  border-radius: 3px;
+}
+#thumbnails:hover {
+  opacity: 0.4;
+  border: 2px solid var(--coral);
+  
 }
 
 a {
@@ -140,7 +160,7 @@ h1 {
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size:48px;
-  color: var(--coral);
+  color: var(--eggshell);
 }
 p {
   font-family: 'Open Sans Condensed', sans-serif;
