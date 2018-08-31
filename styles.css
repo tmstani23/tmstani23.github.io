@@ -7,12 +7,12 @@
 }
 body {
   background-color: var(--leather);
-  margin-bottom: 0px;
 }
 
 #banner{
   font-size:72px;
   color: var(--leather);
+  text-align: left;
 }
 .nav-bar-sc {
   position: fixed; /* Set the navbar to fixed position */
@@ -34,9 +34,6 @@ body {
   .profile-pane {
     margin: 0px;
   }
-  #port-section {
-    width: 100%;
-  }
 }
 #nav-section{
   background-image: url(imgs/gradient2.jpg);
@@ -46,13 +43,24 @@ body {
   background-color: var(--navy-blue);
   border-top: 50px solid var(--navy-blue);
   border-bottom: 50px solid var(--navy-blue);
+  margin: 20px;
   
 }
 #nav-section h2 {
   color: var(--eggshell);
 }
-#nav-section p {
-  color: var(--coral);
+.nav-btn:hover {
+  background-color: var(--eggshell);
+  color: var(--navy-blue);
+  border: 1px solid black;
+}
+.nav-btn {
+  background-color: var(--coral);
+  width: 150px;
+  margin-right: 20px;
+}
+#about-text{
+  color: var(--navy-blue);
 }
 #avatar-image{
   display: inline-block;
@@ -63,45 +71,10 @@ body {
   border: 1px solid black;
   
 }
-#skills-section{
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-}
-#skills-section div {
-  flex-direction: column;
-  
-  align-items: center;
-}
-#skills-section h3 {
-  color: var(--eggshell);
-  font-size: 2.5em;
-  
-}
-#contact-section{
-  margin: 20px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
-  width: 100%;
-  text-align: center;
-  background: linear-gradient(to right, rgb(144, 144, 144), rgb(46, 46, 46), rgb(246, 246, 246));
-
-}
-#contact-section li {
-  display: inline;
-  margin: 10px;
-}
 #port-section{
-  width: 80%;
-  margin: 0 auto;
   margin-top: 20px;
-  border-bottom: 1px solid var(--eggshell)
-  
+  border-bottom: 1px solid var(--eggshell);
+  text-align: center;
 }
 .profile-pane {
   margin:20px;
@@ -118,7 +91,6 @@ body {
   padding: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .profile-pane h3{
   color: var(--coral);
   font-size: 2em;
@@ -142,34 +114,57 @@ body {
   
 }
 
+#skills-section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#skills-section div {
+  flex-direction: column;
+  
+  align-items: center;
+}
+#skills-section h3 {
+  color: var(--eggshell);
+  font-size: 2.5em;
+  
+}
+#contact-section{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(to right, rgb(246, 246, 246), rgb(144, 144, 144),rgb(59, 59, 59));
+
+}
+#contact-section li {
+  display: inline;
+  margin: 10px;
+}
+#contact-section p {
+  color: var(--navy-blue);
+  font-family: 'Open Sans Condensed', sans-serif; 
+}
+.icon-buttons {
+  /* background: var(--eggshell);
+  height: 50%;
+  line-height: 1.2;
+   */
+  color: var(--eggshell);
+  
+  
+}
+.icon-buttons:hover {
+  color: var(--navy-blue);
+}
+
+
 a {
 	color: var(--leather);
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-.btn {
-  font-family: 'Oswald', sans-serif;
-  color: var(--navy-blue);
-  background-color: var(--coral);
-  text-align: center;
-  margin: 5px;
-  width: 140px;
-  height: 45px;
-  padding: 10px;
-  border: 1px solid black;
-}
-.btn:hover {
-  background-color: var(--eggshell);
-  color: var(--navy-blue);
-  border: 1px solid black;
-}
-.nav-btn:hover {
-  background-color: var(--eggshell);
-  color: var(--navy-blue);
-  border: 1px solid black;
-}
-.nav-btn {
-  background-color: var(--coral);
-}
+
 
 h1 {
     font-family: 'Crimson Text', serif;
@@ -197,5 +192,6 @@ p {
 li {
   list-style-type: none;
   color: var(--navy-blue);
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
