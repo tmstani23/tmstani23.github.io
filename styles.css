@@ -7,9 +7,20 @@
 }
 body {
   background-color: var(--leather);
+  margin:0;
+  padding: 0;
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  padding: 0;
+  margin: 0;
 }
 
-#banner{
+#banner {
   font-size:72px;
   color: var(--leather);
   text-align: left;
@@ -43,7 +54,6 @@ body {
   background-color: var(--navy-blue);
   border-top: 50px solid var(--navy-blue);
   border-bottom: 50px solid var(--navy-blue);
-  margin: 20px;
   
 }
 #nav-section h2 {
@@ -56,20 +66,29 @@ body {
 }
 .nav-btn {
   background-color: var(--coral);
-  width: 150px;
-  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 170px;
+  height: 50px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Open Sans Condensed', sans-serif; 
 }
 #about-text{
   color: var(--navy-blue);
 }
 #avatar-image{
-  display: inline-block;
+  
   max-width:350px;
   max-height:250px;
   margin: 20px;
   border-radius: 100%;
   border: 1px solid black;
   
+}
+#banner-text {
+ padding: 20px;
 }
 #port-section{
   margin-top: 20px;
@@ -118,25 +137,30 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  
+  align-items: center;
+}
+#skills-description {
+  color: var(--navy-blue)
 }
 #skills-section div {
   flex-direction: column;
   
-  align-items: center;
+  
 }
 #skills-section h3 {
-  color: var(--eggshell);
+  color: var(--coral);
   font-size: 2.5em;
   
 }
 #contact-section{
-  height: 300px;
+  min-height: 300px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
   background: linear-gradient(to right, rgb(246, 246, 246), rgb(144, 144, 144),rgb(59, 59, 59));
-
+  background-size: fill;
 }
 #contact-section li {
   display: inline;
@@ -145,12 +169,15 @@ body {
 #contact-section p {
   color: var(--navy-blue);
   font-family: 'Open Sans Condensed', sans-serif; 
+  width: 80%;
+  margin: 0 auto;
 }
 .icon-buttons {
   /* background: var(--eggshell);
   height: 50%;
   line-height: 1.2;
    */
+  margin-top: 10px;
   color: var(--eggshell);
   
   
