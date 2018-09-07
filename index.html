@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto" rel="stylesheet"> <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
@@ -22,27 +22,54 @@
   <!-- Banner -->
   <div class="container-fluid" id="nav-section">
     <div class="row justify-content-left align-items-center">
-      <div class="col-md-2 ">
-        <img src="imgs/tim-icon.jpg"; class="img-responsive center-block"; id="avatar-image"; alt="Responsive image">
+      <div class="col-md-2 justify-content-center align-items-center">
+        <img src="imgs/tim-icon.jpg"; class="img-responsive"; id="avatar-image"; alt="Responsive image">
       </div>
       <div class="col-md-10 justify-content-left align-items-left" id="banner-text">
-        <h1 class="justify-content-center"id= "banner">Timothy Stanislav</h1>
+        <h1 class="justify-content-center"id="banner">Timothy Stanislav</h1>
         <h4>Front-End Web Developer</h4>
-        <h2 class="text-left" id="about-header">About Me</h2>
+        <h2 class="text-left box-header">About Me</h2>
         <p id="about-text">I am a passionate Junior Developer.  I focus primarily on Javascript, HTML, CSS, front-end development.  I am eager to improve software development skills and I am excited to co-evolve with a more experienced team.  I am thrilled there is always so much to learn and improve.   I like cats, technology, art and nature.
         </p>
       </div>
     </div>
     <!-- Responsive Nav -->
-    <div class="row">
-      <div class="col-md-12 text-center nav-bar-sc">
-        <a href="#nav-section"; class="btn btn-primary nav-btn" id="nav-button" role="button">Navigation Section</a>
-        <a href="#port-section"; class="btn btn-primary nav-btn" id="port-button"role="button">Portfolio section</a>
-        <a href="#skills-section" class="btn btn-primary nav-btn" id="skills-button">Skills Section</a>
-        <a href="#contact-section" class="btn btn-primary nav-btn" id="contact-button">Contact Section</a>
+    <!-- <div class="row">
+      <div class="col-md-12">
+        
+        <a href="#nav-section"; class="btn btn-primary nav-btn" id="nav-button" role="button">Navigation</a>
+        <a href="#port-section"; class="btn btn-primary nav-btn" id="port-button"role="button">Portfolio</a>
+        <a href="#skills-section" class="btn btn-primary nav-btn" id="skills-button">Skills</a>
+        <a href="#contact-section" class="btn btn-primary nav-btn" id="contact-button">Contact</a>
       </div>
-    </div>
+    </div> -->
+    
+        <nav class="navbar nav-bar-sc navbar-expand-lg navbar-dark" style="background-color: #0F1626;">
+          <div class="navbar-container" >
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+              <span class="navbar-toggler-icon"></span>
+              
+          </button>
+          <div class="collapse navbar-collapse test1" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                
+                <!-- <img src="imgs/goldblackwings.png" class="brand-image" alt=""> -->
+                  
+                <a class="nav-link-a" href="#nav-section">About</a>
+                <a class="nav-link-a" href="#port-section">Portfolio</a>
+                <a class="nav-link-a" href="#skills-section">Skills and Education</a>
+                <a class="nav-link-a" href="#contact-section">Contact</a>
+              
+            </div>
+          </div>
+          </div>
+        </nav> 
+    
+      
+    
   </div>
+
   <!-- Portfolio Section -->
   <div class="container-fluid"; id="port-section">    
     <div class="row">
@@ -226,9 +253,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 justify-content-center"> 
+      <div class="col-md-4 align-items-center hard-center-flex"> 
         <h3>Professional Experience</h3>
-        <h4><strong>Web Developer,</strong> 3M - Maplewood, MN - December 2017 to Present</h4>
+          <h4><strong>Web Developer,</strong> 3M - Maplewood, MN - December 2017 to Present</h4>
         <ul> 
           <li>Handled technical issues and design pattern flaws.</li>
           <li>Advised 3M partners on technical specifications and usage.</li>
@@ -248,10 +275,11 @@
           <li>Devised and organized two libraries of algorithms in Javascript.</li>
           <li>Achieved completion of Code Academy, Khan Academy, Javascript, Html and CSS courses.</li>
         </ul>
+        
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 justify-content-center"> 
+      <div class="col-md-6 justify-content-center hard-center-flex"> 
         <h3>Education</h3>
         <h4><strong>Front End Development Certification in Software Development Engineering, </strong> freeCodeCamp - January 2017 to March 2018</h4>
         <h4><strong>Landscape Architecture Master&#8217s Program, </strong> University of Minnesota - Minneapolis, Minnesota 2010-2011</h4>
@@ -266,10 +294,10 @@
   <div class="container-fluid" id="contact-section">
     <div class="row">
       <div class="col-md-12 justify-content-center align-items-center">  
-        <h2>Contact</h2>
-        <h3>View the below links for examples of my work and professional spaces.  I would love to hear from you about job possibilities, constructive criticism, and opportunities for collaboration.  
+        <h2 class="box-header">Contact</h2>
+        <p>View the below links for examples of my work and professional spaces.  I would love to hear from you about job possibilities, constructive criticism, and opportunities for collaboration.  
         If you just want to chat about software or technology in general feel free to contact me as well!  
-        The best way to contact me is through the email button below at tmstani23@gmail.com</h3>
+        The best way to contact me is through the email button below.</p>
         <div id = "icons-div"> 
           <a href="mailto:tmstani23@gmail.com" class="fas fa-envelope fa-3x icon-buttons" role="button"></a>
           <a href="https://github.com/tmstani23" class="fab fa-github-square fa-3x icon-buttons" role="button"></a>
@@ -278,13 +306,18 @@
           <a href="https://codepen.io/tmstani23/#" class="fab fa-codepen fa-3x icon-buttons"; role="button"></a>
         </div>
         <p id="trademark">This site was built with Javascript, Bootstrap, HTML and CSS <br>
-          Created by: Timothy Stanislav - <a href="">
+          Created by: Timothy Stanislav - 
             <img src="imgs/goldblackwings.png" class="brand-image">
-          </a> IndoorKin Productions &copy;</p>
+           IndoorKin Productions &copy;</p>
       </div>
     </div>
   </div>  
 
+
+  <!-- Bootstrap JS and Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
