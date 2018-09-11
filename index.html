@@ -25,48 +25,33 @@
       <div class="col-md-2 justify-content-center align-items-center">
         <img src="imgs/tim-icon.jpg"; class="img-responsive"; id="avatar-image"; alt="Responsive image">
       </div>
-      <div class="col-md-10 justify-content-left align-items-left" id="banner-text">
+      <div class="col-md-9 justify-content-left align-items-left" id="banner-text">
         <h1 class="justify-content-center"id="banner">Timothy Stanislav</h1>
         <h4>Front-End Web Developer</h4>
         <h2 class="text-left box-header">About Me</h2>
-        <p id="about-text">I am a passionate Junior Developer.  I focus primarily on Javascript, HTML, CSS, front-end development.  I am eager to improve software development skills and I am excited to co-evolve with a more experienced team.  I am thrilled there is always so much to learn and improve.   I like cats, technology, art and nature.
+        <p id="about-text">Hello there!  I am a junior developer who is eager to improve software development skills.  I am excited to further co-evolve, learn, and grow, with a more experienced team.  I focus primarily on Javascript, HTML, CSS, front-end development though I have dabbled with back-end and native applications.  I like cats, technology, art and nature.
         </p>
       </div>
     </div>
-    <!-- Responsive Nav -->
-    <!-- <div class="row">
-      <div class="col-md-12">
-        
-        <a href="#nav-section"; class="btn btn-primary nav-btn" id="nav-button" role="button">Navigation</a>
-        <a href="#port-section"; class="btn btn-primary nav-btn" id="port-button"role="button">Portfolio</a>
-        <a href="#skills-section" class="btn btn-primary nav-btn" id="skills-button">Skills</a>
-        <a href="#contact-section" class="btn btn-primary nav-btn" id="contact-button">Contact</a>
-      </div>
-    </div> -->
-    
-        <nav class="navbar nav-bar-sc navbar-expand-lg navbar-dark" style="background-color: #0F1626;">
+        <!-- Responsive Navbar -->
+        <nav class="navbar sticky-bottom nav-bar-sc navbar-expand-lg navbar-dark" style="background-color: #0F1626;">
           <div class="navbar-container" >
           
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
-              <span class="navbar-toggler-icon"></span>
-              
-          </button>
-          <div class="collapse navbar-collapse test1" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span>
                 
-                <!-- <img src="imgs/goldblackwings.png" class="brand-image" alt=""> -->
-                  
-                <a class="nav-link-a" href="#nav-section">About</a>
-                <a class="nav-link-a" href="#port-section">Portfolio</a>
-                <a class="nav-link-a" href="#skills-section">Skills and Education</a>
-                <a class="nav-link-a" href="#contact-section">Contact</a>
-              
+            </button>
+            <div class="collapse navbar-collapse test1" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <!-- These links return the user to the section of the page where the id selector begins on click. -->
+                  <a class="nav-link-a" href="#nav-section">About</a>
+                  <a class="nav-link-a" href="#port-section">Portfolio</a>
+                  <a class="nav-link-a" href="#skills-section">Skills and Education</a>
+                  <a class="nav-link-a" href="#contact-section">Contact</a>
+              </div>
             </div>
           </div>
-          </div>
         </nav> 
-    
-      
     
   </div>
 
@@ -75,7 +60,7 @@
     <div class="row">
       <div class="col-md-12 justify-content-center align-items-center">
           <h2 class="text-center">Portfolio</h2>
-          <p id="port-summary">I have been learning and practicing coding skills by building projects almost every day for the past 2 years. <br> 
+          <p id="port-summary">I have been learning and practicing coding skills by building projects almost every day for the past 2 years.
             Below are some of the projects and applications I created on my coding journey so far.</p>
       </div>
     </div>
@@ -95,7 +80,7 @@
                 They move in straight lines and the desire for food or poison modifies their vectors towards or away the target
                 once it is within their sight radius.  Each vehicle also has different min/max speed values in their genetic code.
                 There is also a chance they will clone themselves and retain the same dna values. There is mutation which happens rarely and slightly modifies the genetic values of the agent at cloning. More healthy agents have twice the chance to clone themselves. </p>
-          <a href="https://github.com/tmstani23/Stay-Alive-Simulation">Project on Github</a>
+          <a href="https://github.com/tmstani23/Stay-Alive-Simulation">View Github Repository</a>
           <h4>Technologies Used:</h4>
           <p>P5 JS, Javascript, HTML, CSS</p>
       </div>
@@ -113,7 +98,7 @@
         </figure>
         <h4>Summary Description:</h4>
             <p>A React application that calculates probabilities of events using Bayes' Theorem.  Users can input probabilities and generate a result based on Bayes' formula.  There is a section on how to use the app and what Baye's formula is. </p>
-            <a href="https://github.com/tmstani23/Bayes-Predictor-JS">Project at Github</a>
+            <a href="https://github.com/tmstani23/Bayes-Predictor-JS">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>React, Javascript, HTML, CSS Grid/Flexbox</p>
       </div>
@@ -127,7 +112,7 @@
         </figure>
         <h4>Summary Description:</h4>
             <p>A weather app that displays weather based on user's location. The application displays: humidity, temp min/max/current, and visibility.  Temperature can be displayed in either Fahrenheit or Celsius with the click of a button. </p>
-            <a href="https://github.com/tmstani23/Local-Weather-App">Project at Github</a>
+            <a href="https://github.com/tmstani23/Local-Weather-App">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>React, Babel, Javascript, HTML, CSS/Grid/Flexbox</p>
       </div>
@@ -145,7 +130,7 @@
           </figure>
           <h4>Summary Description:</h4>
             <p>A dashboard viewer for viewing the top Github repositories (Javascript, Ruby, Python) based on their star count. A user can select one of the languages and display only results for that language or view all the languages using the navigation. A link to the page, username and starcount are displayed for each result.</p>
-            <a href="https://github.com/tmstani23/Top-Github-Viewer">Project Github</a>
+            <a href="https://github.com/tmstani23/Top-Github-Viewer">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>React, Babel, Javascript, HTML, CSS</p>
         </div>
@@ -160,7 +145,7 @@
           </figure>
           <h4>Summary Description:</h4>
             <p>A productivity timer to help you manage focus and breaks. The timer and breaks can be set to the second.  Both timer and break can be reset or adjusted mid countdown.  There is also a pause timer feature.</p>
-            <a href="https://github.com/tmstani23/Pomodoro-JS">Project at Github</a>
+            <a href="https://github.com/tmstani23/Pomodoro-JS">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>Javascript, HTML, CSS</p>
         </div>
@@ -177,7 +162,7 @@
           </figure>
           <h4>Summary Description:</h4>
             <p>A calculator that runs in the browser.  The calculator includes the ability to perform actions on a previous result, chain functions, clearing last number, and a complete clear. </p>
-            <a href="https://github.com/tmstani23/JS-Calculator">Project at Github</a>
+            <a href="https://github.com/tmstani23/JS-Calculator">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>Javascript, HTML, CSS</p>
             
@@ -192,8 +177,8 @@
               <figcaption>A screenshot of the game in progress.</figcaption>
           </figure>
           <h4>Summary Description:</h4>
-            <p>A classic Simon memor game for the browser.  The game features hardcore mode and random mode.  Hardcore mode forces a complete reset if a mistake is made.  Random mode generates a random sequence each time instead of repeating the previously generated sequence.  If neither are selected the game is played classic.  </p>
-            <a href="https://github.com/tmstani23/Simon-JS">Project at Github</a>
+            <p>A classic Simon memory game for the browser.  The game features hardcore mode and random mode.  Hardcore mode forces a complete reset if a mistake is made.  Random mode generates a random sequence each time instead of repeating the previously generated sequence.  If neither are selected the game is played classic.  </p>
+            <a href="https://github.com/tmstani23/Simon-JS">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>Javascript, HTML, CSS grid/flexbox</p>
             
@@ -211,26 +196,24 @@
           </figure>
           <h4>Summary Description:</h4>
             <p>A Tic-Tac-Toe game that runs in the browser. A user can pick a side.  The game features an almost unbeatable a.i. enemy player. There is also the option of resetting the game. The game features status messages and error warnings will be displayed for spamming buttons or attempting to make moves while the enemies turn is in progress.</p>
-            <a href="https://github.com/tmstani23/Tic-Tac-Toe">Project at Github</a>
+            <a href="https://github.com/tmstani23/Tic-Tac-Toe">View Github Repository</a>
           <h4>Technologies Used:</h4>
             <p>Javascript, HTML, CSS</p>
         </div>
         
-        <div class="col-md-4 profile-pane">
-          <figure>
-            <h3>FCC React Course Demonstration</h3>
-            <a href="https://tmstani23.github.io/FCC-React-Course/">
-              <img src="https://raw.githubusercontent.com/tmstani23/FCC---React-Course/Development/screenshots/ss5.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-            </a>
-              <figcaption>A screenshot of the rendering examples.</figcaption>
-          </figure>
-          <h4>Summary Description:</h4>
-            <p>An in-depth React and JSX course delivered by FreeCodeCamp. This repo contains my code journey through the course.  Each of the files includes challenges/examples. Each section represents a different file and its examples are marked in different colors.</p>
-            <a href="https://github.com/tmstani23/FCC-React-Course">Project at Github</a>
-          <h4>Technologies Used:</h4>
-            <p>React, Javascript, HTML, CSS</p>
-          
-          
+      <div class="col-md-4 profile-pane">
+        <figure>
+          <h3>FCC React Course Demonstration</h3>
+          <a href="https://tmstani23.github.io/FCC-React-Course/">
+            <img src="https://raw.githubusercontent.com/tmstani23/FCC---React-Course/Development/screenshots/ss5.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
+          </a>
+            <figcaption>A screenshot of the rendering examples.</figcaption>
+        </figure>
+        <h4>Summary Description:</h4>
+          <p>An in-depth React and JSX course delivered by FreeCodeCamp. This repo contains my code journey through the course.  Each of the files includes challenges/examples. Each section represents a different file and its examples are marked in different colors.</p>
+          <a href="https://github.com/tmstani23/FCC-React-Course">View Github Repository</a>
+        <h4>Technologies Used:</h4>
+          <p>React, Javascript, HTML, CSS</p>
       </div>
       
     </div>
@@ -243,7 +226,9 @@
     <div class="row">
       <div class="col-md-12 justify-content-center"> 
         <h2>Skills and Experience</h2>
-        <p id="skills-description"> Below is an overview of my code journey, experience and skillset. I have learned and programmed object oriented, functional, instructional and some machine learning and artificial intelligence systems.  I engineered a few applications utilizing SQL databases and also non-relational databases with Express, Node and MongoDB.  I'm interested in learning C++ or C# in the future.  Currently, I'm motivated toward using functional programming philosophy and am working to master Javascript principles. I am focusing on developing applications in React/Node and learning React principles at present.</p>
+        <p id="skills-description"> Below is an overview of my code journey, experience and skillset. I am concentrating on developing applications in React/Node and learning React principles at present. I am motivated to use functional programming principles and am working to become a Javascript wizard. I have learned imperative: object-oriented, procedural programming.  In the most current projects I focused on declarative programming using functional methods and ES6 syntax.  I learned mathematical paradigms creating genetic and neural-network artificial intelligence systems.  
+          Also, I covered the full scope of application development; from database creation, controlling, routing, data organization and  database calls.  I have experience displaying data in a pleasing manner and testing for usability.  I have also done some work with non-relational databases using Mongoose, Express, Node and MongoDB.  
+          I'm interested in learning C++ or C# and getting into virtual reality and game development in the future. </p>
         <h3>Software Development Skills</h3>
         <ul id="skills-ul1"> 
           <li><strong>High: </strong>Javascript, HTML, CSS/grid/flexbox</li>
@@ -253,7 +238,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 align-items-center hard-center-flex"> 
+      <div class="col-md-7 align-items-center justify-content-center "> 
         <h3>Professional Experience</h3>
           <h4><strong>Web Developer,</strong> 3M - Maplewood, MN - December 2017 to Present</h4>
         <ul> 
@@ -275,18 +260,23 @@
           <li>Devised and organized two libraries of algorithms in Javascript.</li>
           <li>Achieved completion of Code Academy, Khan Academy, Javascript, Html and CSS courses.</li>
         </ul>
-        
-      </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 justify-content-center hard-center-flex"> 
-        <h3>Education</h3>
-        <h4><strong>Front End Development Certification in Software Development Engineering, </strong> freeCodeCamp - January 2017 to March 2018</h4>
-        <h4><strong>Landscape Architecture Master&#8217s Program, </strong> University of Minnesota - Minneapolis, Minnesota 2010-2011</h4>
-        <h4><strong>B.S. Journalism, Print Journalism,</strong> University of Wisconsin - River Falls, Wisconsin 2005-2009</h4>
-        <h4><strong>Minor - History, </strong> University of Wisconsin - River Falls, Wisconsin 2005-2009</h4>
+      
+      <div class="col-md-5 justify-content-center hard-center-flex"> 
+          
+          <h3>Education</h3>
+          <img src="imgs/education1.jpg"  class="img-responsive"; id="edu-image"; alt="Responsive image">
+          <h4><strong>Front End Development Certification in Software Development Engineering, </strong> freeCodeCamp - January 2017 to March 2018</h4>
+          <h4><strong>Landscape Architecture Master&#8217s Program, </strong> University of Minnesota - Minneapolis, Minnesota 2010-2011</h4>
+          <h4><strong>B.S. Journalism, Print Journalism,</strong> University of Wisconsin - River Falls, Wisconsin 2005-2009</h4>
+          <h4><strong>Minor - History, </strong> University of Wisconsin - River Falls, Wisconsin 2005-2009</h4>
       </div>
+      
+
     </div>
+    <!-- <div class="row">
+     
+    </div> -->
   
   </div>
   
@@ -295,7 +285,7 @@
     <div class="row">
       <div class="col-md-12 justify-content-center align-items-center">  
         <h2 class="box-header">Contact</h2>
-        <p>View the below links for examples of my work and professional spaces.  I would love to hear from you about job possibilities, constructive criticism, and opportunities for collaboration.  
+        <p id="contact-summary">View the below links for examples of my work and professional spaces.  I would love to hear from you about job possibilities, constructive criticism, and opportunities for collaboration.  
         If you just want to chat about software or technology in general feel free to contact me as well!  
         The best way to contact me is through the email button below.</p>
         <div id = "icons-div"> 
