@@ -310,7 +310,7 @@ hr {
 }
 
 /*Change styles as below when screen is below 800 px wide*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .nav-bar-sc {
     position: fixed;
     padding: 5px;
