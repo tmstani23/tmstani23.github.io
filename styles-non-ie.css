@@ -136,22 +136,23 @@ figcaption {
 .nav-link-a {
   font-size: 26px;
   font-family: 'Crimson Text', serif;
-  color: var(--light_grey);
+  color: var(--light_pink_black);
   margin-left: 10px;
   margin-right: 10px;
 }
 .navbar-container a:hover {
-  color:var(--med_dark_brownish_grey); 
+  color:var(--light_pink_black); 
 }
 #nav-section h2 {
   color: var(--dark_fushia);
 }
 /* comment out .nav-bar-sc to make nav stay at the top 
   when in fullscreen view*/
+
 .nav-bar-sc {
   position: fixed;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid var(--light_purple_pink);
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -162,11 +163,12 @@ figcaption {
   text-align: left;
 }
 .nav-bar-sc .navbar-toggler:hover {
-  border: 1px solid var(--light_grey);
+  border: 1px solid var(--light_pink_black);
 }
+
 .nav-btn {
-  background-color: var(--light_purple_pink);
-  border: 1px solidvar(--black);
+  background-color: var(--black);
+  border: 1px solid var(--light_pink_black);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   width: 170px;
