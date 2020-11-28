@@ -2,7 +2,7 @@
   --light_pink_black: #c7aec2;
   --light_purple_pink: #ae85ad;
   --dark_fushia: #893d76;
-  
+  --dark_purple: rgba(191, 0, 255, 0.1);
   --light_grey: #dcdede;
   --med_light_grey: #aeafb2;
   --med_grey: #a2a4a4;
@@ -69,6 +69,7 @@ hr {
     border-top: 1px solid var(--light_pink_black);
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 45%;
     padding: 0; 
 }
@@ -112,8 +113,9 @@ figcaption {
   max-height:250px;
   margin: 10px;
   border-radius: 100%;
-  border: 1px solidvar(--black);
-  box-shadow: 0 0 2px 0px var(--light_pink_black), 0 0 15px 0px var(--dark_fushia); 
+  border-color: var(--light_purple_pink);
+  box-shadow: 0 0 5px var(--dark_fushia), inset 0 0 5px var(--dark_purple), 0 1px 0 var(--light_pink_black);
+  animation: glow 1200ms ease-out infinite alternate;
 }
 #banner-text {
  padding: 10px;
@@ -129,10 +131,13 @@ figcaption {
   background-size: cover; 
   background-color:var(--light_grey);
   border-bottom: 2px solid var(--light_purple_pink);
+  position: relative;
+  z-index: 5;
 }
 
 .navbar-container {
   margin: 0 auto;
+  
 }
 .nav-link-a {
   font-size: 26px;
@@ -156,13 +161,17 @@ figcaption {
   border: 1px solid var(--light_purple_pink);
   margin: 20px;
   border-radius: 5px;
+  
+  
   /* in order: x offset, y offset, blur size, spread size, color */
   /* blur size and spread size are optional (they default to 0) */
   
-  box-shadow: 0 0 2px 0px var(--light_pink_black), 0 0 15px 0px var(--dark_fushia); 
+  border-color: var(--light_purple_pink);
+  box-shadow: 0 0 5px var(--dark_fushia), inset 0 0 2px var(--dark_purple), 0 1px 0 var(--black);
+  animation: glow 1200ms ease-out infinite alternate;
   top:0;
   right: 0;
-  z-index: 4;
+  
   color: var(--light_grey);
   text-align: left;
 }
@@ -188,10 +197,14 @@ figcaption {
   text-align: center;
   
 }
+/* #highlighted-project-pane {
+  margin-top: 20px;
+} */
 .profile-pane {
   margin:18px;
-  z-index: -1;
-  border: 1px solid var(--light_pink_black);
+  z-index: 4;
+  
+  /* border: 2px solid var(--light_purple_pink); */
   min-width: 350px;
   text-align: center;
   height: 800px;
@@ -199,12 +212,14 @@ figcaption {
   color: var(--light_pink_black);
   overflow: auto;
   border-radius: 5px;
+  border-color: var(--light_purple_pink);
+  box-shadow: 0 0 5px var(--dark_fushia), inset 0 0 5px var(--dark_purple), 0 1px 0 var(--light_pink_black);
+  animation: glow 1000ms ease-out infinite alternate;
   padding: 10px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  box-shadow:
-    0 0 7px 1px var(--light_pink_black),  /* inner white */
-    0 0 15px 3px var(--light_purple_pink), /* middle magenta */
-    0 0 21px 7px var(--dark_fushia); /* outer cyan */
+  
+
+  
 }
 .profile-pane h4{
   color: var(--light_grey);
@@ -331,6 +346,19 @@ figcaption {
     opacity: 1.0;
     border-radius: 75%;
   }
+}
+
+@keyframes glow {
+  0% {
+  border-color: var(--light_purple_pink);
+  box-shadow: 0 0 5px var(--light_purple_pink), inset 0 0 1px var(--dark_purple), 0 1px 0 var(--light_pink_black);
+  }	
+  100% {
+  border-color: var(--dark_fushia);
+
+  box-shadow: 0 0 30px var(--light_purple_pink), inset 0 0 4px var(--dark_fushia), 0 1px 0 var(--light_pink_black);
+  }
+  
 }
 
 /*Change styles as below when screen is below 800 px wide*/
