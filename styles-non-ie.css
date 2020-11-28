@@ -53,8 +53,8 @@ strong {
 }
 p {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 16px;
-  color: var(--light_pink_black);
+  font-size: 12px;
+  color: var(--med_dark_dark_grey);
 }
 li {
   list-style-type: circle;
@@ -105,8 +105,8 @@ figcaption {
 
 #about-text {
   width: 80%;
-  color:var(--black);
   margin-top: 20px;
+  text-align: left;
 }
 #avatar-image{
   max-width:350px;
@@ -166,7 +166,7 @@ figcaption {
   /* in order: x offset, y offset, blur size, spread size, color */
   /* blur size and spread size are optional (they default to 0) */
   
-  border-color: var(--light_purple_pink);
+  border: 1px solid var(--light_grey);
   box-shadow: 0 0 5px var(--dark_fushia), inset 0 0 2px var(--dark_purple), 0 1px 0 var(--black);
   animation: glow 1200ms ease-out infinite alternate;
   top:0;
@@ -193,40 +193,46 @@ figcaption {
   font-family: 'Open Sans Condensed', sans-serif; 
 }
 #port-section{
-  margin-top: 10px;
-  text-align: center;
+  align-content: center;
+  
+  
   
 }
-/* #highlighted-project-pane {
-  margin-top: 20px;
-} */
+#port-summary {
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(to bottom, var(--med_dark_dark_grey), var(--med_dark_grey), var(--med_grey), var(--med_light_grey), var(--light_grey) );
+  padding: 20px;
+}
+#port-summary h5{
+  width: 60%;
+}
+
+
 .profile-pane {
   margin:18px;
   z-index: 4;
   
-  /* border: 2px solid var(--light_purple_pink); */
   min-width: 350px;
   text-align: center;
   height: 800px;
   background-color:var(--dark_fushia);
-  color: var(--light_pink_black);
+  
   overflow: auto;
   border-radius: 5px;
-  border-color: var(--light_purple_pink);
+  border: 1px solid var(--light_grey);
   box-shadow: 0 0 5px var(--dark_fushia), inset 0 0 5px var(--dark_purple), 0 1px 0 var(--light_pink_black);
   animation: glow 1000ms ease-out infinite alternate;
   padding: 10px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  
-
   
 }
 .profile-pane h4{
   color: var(--light_grey);
 }
 
-
-
+.profile-pane p {
+  color: var(--light_pink_black);
+}
 
 #thumbnails{
   min-height:300px;
@@ -244,13 +250,13 @@ figcaption {
   text-align: left;
   align-items: center;
   padding: 10px;
-  width: 70%;
+  
   margin:0 auto;
   margin-bottom: 30px;
 }
 #skills-description {
-  color:var(--var(--light_purple_pink));
   text-align: left;
+  width: 60%;
   margin: 0 auto;
 }
 .hard-center-flex {
@@ -281,24 +287,26 @@ figcaption {
 }
 #contact-section{
   min-height: 300px;
-  border-top: 2px solid var(--light_purple_pink);
+  border-top: 1px solid var(--med_light_grey);
   padding: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(to right,var(--light_pink_black), var(--light_purple_pink),var(--med_light_grey));
-  background-size: fill;
+  background-image: linear-gradient(to top, var(--med_dark_dark_grey), var(--med_dark_grey), var(--med_grey), var(--med_light_grey), var(--light_grey) );
 }
 
-#contact-summary, #port-summary {
-  color:var(--light_pink_black);
+#contact-summary {
   font-family: 'Open Sans Condensed', sans-serif; 
-  width: 60%;
+  text-align: left;
   margin: 0 auto; 
 }
-#contact-section p {
+#contact-section div div p {
   color:var(--med_dark_dark_grey);
   font-family: 'Open Sans Condensed', sans-serif; 
+  width: 60%;
+  padding: 10px;
+  margin: 0 auto
+ 
 }
 #contact-section h2 {
   text-align: center;
@@ -316,10 +324,11 @@ figcaption {
 .icon-buttons:hover {
   color:var(--black);
 }
-#trademark {
+#contact-section div div p#trademark {
   font-style: italic;
   padding-top: 40px;
   font-size: 12px;
+  color: var(--light_purple_pink);
 }
 
 /* Animation Frames: */
@@ -350,11 +359,11 @@ figcaption {
 
 @keyframes glow {
   0% {
-  border-color: var(--light_purple_pink);
+  border-color: var(--med_dark_dark_grey);
   box-shadow: 0 0 5px var(--light_purple_pink), inset 0 0 1px var(--dark_purple), 0 1px 0 var(--light_pink_black);
   }	
   100% {
-  border-color: var(--dark_fushia);
+  border-color: var(--light_grey);
 
   box-shadow: 0 0 30px var(--light_purple_pink), inset 0 0 4px var(--dark_fushia), 0 1px 0 var(--light_pink_black);
   }
@@ -362,7 +371,7 @@ figcaption {
 }
 
 /*Change styles as below when screen is below 800 px wide*/
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 800px) {
   .nav-bar-sc {
     position: fixed;
     padding: 5px;
@@ -386,7 +395,20 @@ figcaption {
   #avatar-image {
     margin-top: 65px;
   }
+  #port-summary h5{
+    width: 100%;
+  }
   #skills-section {
+    width: 100%;
+  }
+  #skills-description {
+    width: 100%;
+    padding: 10px;
+  }
+  div div p#contact-summary {
+    width: 100%;
+  }
+  div div p#trademark {
     width: 100%;
   }
   #contact-section p, #port-summary {
