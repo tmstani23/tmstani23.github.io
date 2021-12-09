@@ -1,12 +1,12 @@
 :root {
-  --light_pink_black: #c7aec2;
-  --light_purple_pink: #ae85ad;
-  --dark_fushia: #893d76;
-  --dark_purple: rgba(191, 0, 255, 0.1);
+  --light_pink_black: #140f12;;
+  --light_purple_pink: #4a5f4e;
+  --dark_fushia: #2d5c2842;
+  --dark_purple: rgba(94, 255, 0, 0.1);
   --light_grey: #dcdede;
   --med_light_grey: #aeafb2;
   --med_grey: #a2a4a4;
-  --med_dark_grey: #867f8b;
+  --med_dark_grey: #8f8f8f;
   --med_dark_brownish_grey: #646c64;
   --med_dark_dark_grey: #545c5c;
   --black: #140f12;
@@ -142,7 +142,7 @@ figcaption {
 .nav-link-a {
   font-size: 26px;
   font-family: 'Crimson Text', serif;
-  color: var(--light_pink_black);
+  color: var(--light_grey);
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -212,7 +212,6 @@ figcaption {
 .profile-pane {
   margin:18px;
   z-index: 4;
-  
   min-width: 350px;
   text-align: center;
   height: 800px;
