@@ -1,332 +1,192 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-  <title>Portfolio - Timothy Stanislav - Web Developer</title>
+  <head>
+    <title>Portfolio - Timothy Stanislav - Web Developer</title>
+    
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript, React, Stanislav, junior developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Unified Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto" rel="stylesheet"> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126219558-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
   
-
-  <meta charset="UTF-8">
-  <meta name="keywords" content="HTML, CSS, XML, JavaScript, React, Stanislav, junior developer">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      gtag('config', 'UA-126219558-1');
+    </script>
   
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <!-- Browser specific stylesheets -->
-  <link rel="stylesheet" href="styles-non-ie.css">
-  <!--&#91;if IE&#93;>
-    <link rel="stylesheet" type="text/css" href=""styles.css"">
-  <!&#91;endif&#93;-->
-  
-  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Roboto" rel="stylesheet"> <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Raleway" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
- 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126219558-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  </head>
 
-    gtag('config', 'UA-126219558-1');
-  </script>
-
-
-</head>
-
-<body>
-  <!-- Banner -->
-  <div class="container-fluid" id="nav-section">
-    <div class="row justify-content-left align-items-center">
-      <div class="col-md-3 justify-content-center align-items-center">
-        <img src="imgs/tim-icon.jpg"; class="img-responsive"; id="avatar-image"; alt="Responsive image">
-      </div>
-      <div class="col-md-9 justify-content-left align-items-left" id="banner-text">
-        <h1 class="justify-content-center"id="banner">Timothy Stanislav</h1>
-        <h4>Full-Stack Software Developer</h4>
-        <h2 class="text-left box-header">About Me</h2>
-        <p id="about-text">Hello there!  I am a mostly self taught software developer.  I have been learning and practicing coding skills by building projects for over 3 years.  I focus primarily on: React, Javascript, HTML, CSS, full-stack development. I am excited to evolve code skills, try new languages/paradigms and learn with an experienced team. I like cats, technology, art and nature.
-        </p>
+  <body>
+    <!-- Banner -->
+    <div class="container-fluid" id="nav-section">
+      <div class="row justify-content-left align-items-center">
+        <div class="col-md-3 justify-content-center align-items-center">
+          <img src="imgs/me_profile_smaller.png" class="img-responsive" id="avatar-image" alt="Responsive image">
+          <h2 class="name-title">Timothy Stanislav</h2>
+          <h4 class="role-title">Full-Stack Developer</h4>
+        </div>
       </div>
     </div>
-        <!-- Responsive Navbar -->
-        <nav class="navbar sticky-bottom nav-bar-sc navbar-expand-lg navbar-dark" style="background-color: #140f12;">
-          <div class="navbar-container" >
-          
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span>
-                
-            </button>
-            <div class="collapse navbar-collapse test1" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                  <!-- These links return the user to the section of the page where the id selector begins on click. -->
-                  <a class="nav-link-a" href="#nav-section">About</a>
-                  <a class="nav-link-a" href="#port-section">Portfolio</a>
-                  <a class="nav-link-a" href="#skills-section">Skills and Education</a>
-                  <a class="nav-link-a" href="#contact-section">Contact</a>
-              </div>
-            </div>
+    
+    <!-- Moved text below the banner -->
+    <div class="container-fluid text-section">
+      <div class="row justify-content-center">
+        <div class="col-md-9 text-center">
+          <div class="banner-text-overlay">
+            <h1 class="banner-title">Bringing Your Vision to Life with Innovative Web Solutions</h1>
+            <h4 class="banner-summary">Innovative Web Solutions for Transforming Ideas into Impactful Digital Experiences.</h4>
           </div>
-        </nav> 
-    
-  </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Portfolio Section -->
-  <div class="container-fluid" id="port-section">    
-    <div class="row col-md-12 justify-content-center align-items-center" id="port-summary">
-      
-          <h2>Portfolio</h2>
-          <h5>Below are some of the projects and applications I created on my coding journey so far.  Click the animated project images to run the application in the browser.</h4>
-      
-      
-    </div>
-    <hr>
-    <div class="row justify-content-center align-items-center">  
-      <!-- Highlighted Project -->
-      <div id="highlighted-project-pane" class="col-md-8 profile-pane">
-        <figure>
-          <h3>!Reddit Application</h3>
-          <a href="http://not-reddit-slavi.herokuapp.com/">
-            <img src="imgs/main_view.png" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-          </a>
-          <figcaption>A screenshot of main application, post list, and login forms</figcaption>
-        </figure>
-        <h4>Summary Description:</h4>
-          <p>An application for creating posts and commenting on them.  The user can register and login.  Once logged in a user can create posts and comments, read others posts, and comments and rate them.</p>
-          <a href="https://github.com/tmstani23/reddit_clone_mern">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-          <p>React, Express, Node, Mongodb, Mongoose and CSS Grid</p>
+    <!-- Responsive Navbar -->
+    <nav class="navbar sticky-bottom nav-bar-sc navbar-expand-lg navbar-dark" style="background-color: rgba(20, 15, 18, 0.7);">
+      <div class="navbar-container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse test1" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link-a" href="#nav-section">About</a>
+            <a class="nav-link-a" href="#port-section">Portfolio</a>
+            <a class="nav-link-a" href="#resume-section">Resume</a>
+            <a class="nav-link-a" href="#contact-section">Contact</a>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <!-- Project drawers -->
-    <div class="row justify-content-center">  
-      <div class="col-md-4 profile-pane">
-        <figure>
-          <h3>Bayes Predictor App</h3>
-          <a href="https://tmstani23.github.io/Bayes-Predictor-JS/">
-            <img src="imgs/bayes1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-          </a>
-          <figcaption>A screenshot of the inputs, display and result segments.</figcaption>
-        </figure>
-        <h4>Summary Description:</h4>
-            <p>A React application that calculates probabilities of events using Bayes' Theorem.  Users can input probabilities and generate a result based on Bayes' formula.  There is a section on how to use the app and what Baye's formula is. </p>
-            <a href="https://github.com/tmstani23/Bayes-Predictor-JS">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>React, Javascript, HTML, CSS Grid/Flexbox</p>
-      </div>
-      <div class="col-md-4 profile-pane">
-        <figure>
-          <h3>Weatherscope</h3>
-          <a href="https://tmstani23.github.io/Local-Weather-App/">
-            <img src="https://github.com/tmstani23/Local-Weather-App/blob/master/img/20211023_075710.jpg?raw=true" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-          </a>
-            <figcaption>A screenshot overview with loaded data showing.</figcaption>
-        </figure>
-        <h4>Summary Description:</h4>
-            <p>A weather app that displays weather based on user's location. The application displays: humidity, temp min/max/current, and visibility.  Temperature can be displayed in either Fahrenheit or Celsius with the click of a button. </p>
-            <a href="https://github.com/tmstani23/Local-Weather-App">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>React, Babel, Javascript, HTML, CSS/Grid/Flexbox</p>
-      </div>
+    </nav> 
 
-    </div>
-    
-    <div class="row justify-content-center">  
-      <div class="col-md-4 profile-pane">
-          <figure>
-            <h3>The Bookshelf Review</h3>
-            <a href="https://book-shelf-slavi.herokuapp.com">
-              <img src="imgs/bookshelf1.png" class="img-fluid" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-            </a>
-            <figcaption>The home page including navigation.</figcaption>
-          </figure>
-          <h4>Summary Description:</h4>
-            <p>An application for creating book reviews, ratings and sharing them.  A user can see a list of all reviews and create/edit their own reviews.  Users can view a list of reviews they created.  Users can register and login.</p>
-            <a href="https://github.com/tmstani23/react-fullstack-course/tree/master/bookshelf_app">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>React/Redux, MongoDB, Express, Node, Javascript, HTML, CSS</p>
-        </div>
-        
-        <div class="col-md-4 profile-pane">
-          <figure>
-            <h3>Pomodoro-JS</h3>
-            <a href="https://tmstani23.github.io/Pomodoro-JS/">
-              <img src="imgs/pomo1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-            </a>
-              <figcaption>A screenshot of the timer counting down.</figcaption>
-          </figure>
-          <h4>Summary Description:</h4>
-            <p>A productivity timer to help you manage focus and breaks. The timer and breaks can be set to the second.  Both timer and break can be reset or adjusted mid countdown.  There is also a pause timer feature.</p>
-            <a href="https://github.com/tmstani23/Pomodoro-JS">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>Javascript, HTML, CSS</p>
-        </div>
-    </div>
-    
-    <div class="row justify-content-center">  
-      <div class="col-md-4 profile-pane">
-          <figure>
-            <h3>JS Calculator</h3>
-            <a href="https://tmstani23.github.io/JS-Calculator/">
-              <img src="imgs/calc1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-            </a>
-            <figcaption>The initial state of the calculator.</figcaption>
-          </figure>
-          <h4>Summary Description:</h4>
-            <p>A calculator that runs in the browser.  The calculator includes the ability to perform actions on a previous result, chain functions, clearing last number, and a complete clear. </p>
-            <a href="https://github.com/tmstani23/JS-Calculator">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>Javascript, HTML, CSS</p>
-            
-        </div>
-        
-        <div class="col-md-4 profile-pane">
-          <figure>
-            <h3>Simon Memory Game</h3>
-            <a href="https://tmstani23.github.io/Simon-JS/">
-              <img src="imgs/simon1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-            </a>
-              <figcaption>A screenshot of the game in progress.</figcaption>
-          </figure>
-          <h4>Summary Description:</h4>
-            <p>A classic Simon memory game for the browser.  The game features hardcore mode and random mode.  Hardcore mode forces a complete reset if a mistake is made.  Random mode generates a random sequence each time instead of repeating the previously generated sequence.  If neither are selected the game is played classic.  </p>
-            <a href="https://github.com/tmstani23/Simon-JS">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>Javascript, HTML, CSS grid/flexbox</p>
-            
-        </div>
-    </div>
-    
-    <div class="row justify-content-center">  
-      <div class="col-md-4 profile-pane">
-          <figure>
-            <h3>Tic-Tac-Toe</h3>
-            <a href="https://tmstani23.github.io/Tic-Tac-Toe/">
-              <img src="imgs/tictac1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-            </a>
-            <figcaption>A screen shot of the tie state in the game.</figcaption>
-          </figure>
-          <h4>Summary Description:</h4>
-            <p>A Tic-Tac-Toe game that runs in the browser. A user can pick a side.  The game features an almost unbeatable a.i. enemy player. There is also the option of resetting the game. The game features status messages and error warnings will be displayed for spamming buttons or attempting to make moves while the enemies turn is in progress.</p>
-            <a href="https://github.com/tmstani23/Tic-Tac-Toe">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-            <p>Javascript, HTML, CSS</p>
-        </div>
-        
-      <div class="col-md-4 profile-pane">
-        <figure>
-          <h3>Exercise-Now Application</h3>
-          <a href="http://exercise-now.herokuapp.com/">
-            <img src="imgs/ss1.jpg" alt="Contact the Webmaster. Broken Asset" id="thumbnails">
-          </a>
-          <figcaption>A screenshot of main application, user list, and forms</figcaption>
-        </figure>
-        <h4>Summary Description:</h4>
-          <p>An application that allows a person to create a persistent user.  The user can login with a userId.  Once logged in a user can submit an exercise with description, duration and date.  
-            The user can also search exercise logs by userId and date range.</p>
-          <a href="https://github.com/tmstani23/exercise-now">View Github Repository</a>
-          <h4>Technologies Used:</h4>
-          <p>React, Express, Node, Mongodb and CSS Grid</p>
-      </div>
-      
-    </div>
-        
+<!-- Portfolio Section -->
+<div class="container-fluid" id="port-section">    
+  <div class="row justify-content-center align-items-center" id="port-summary">
+    <h2 class="portfolio-header">Portfolio</h2>
+    <h5 class="portfolio-subtext">Below are some of the projects and applications I have developed. Click the project images to explore the applications in detail.</h5>
   </div>
-  <!-- hr tag used below as a separating line -->                                                       
   <hr>
-  <!-- Skills and Experience Section -->
-  <div class="container-fluid" id="skills-section">
-    <div class="row">
-      <div class="col-md-12 justify-content-center"> 
-        <h2>Skills and Experience</h2>
-        <p id="skills-description"> Below is an overview of my code journey, experience and skillset. I am concentrating on developing applications in React/Node and learning React principles at present. I am motivated to use functional programming principles and am working to become a Javascript wizard. I have learned imperative: object-oriented, procedural programming.  In the most current projects I focused on declarative programming using functional methods and ES6 syntax.  I learned mathematical paradigms creating genetic and neural-network artificial intelligence systems.  
-          Also, I covered the full scope of application development; from database creation, controlling, routing, data organization and  database calls.  I have experience displaying data in a pleasing manner and testing for usability.  I have also done some work with non-relational databases using Mongoose, Express, Node and MongoDB.  
-          I'm interested in learning C++ or C# and getting into virtual reality and game development in the future. </p>
-        <h3>Software Development Skills</h3>
-        <ul id="skills-ul1"> 
-          <li><strong>High: </strong>Javascript, HTML, CSS/grid/flexbox</li>
-          <li><strong>Medium: </strong>React, Algorithms, Debugging/Testing, Bootstrap, Agile, Linux, Jira, Documentation</li>
-          <li><strong>Low: </strong>Node, jQuery, PhP, Python, Graphic Design, SQL</li>
-        </ul>
-      </div>
+  <div class="row justify-content-center align-items-center">  
+    <!-- Thrive Loom E-Commerce MVP -->
+    <div class="col-md-5 profile-pane">
+      <figure>
+        <h3>Thrive Loom E-Commerce MVP</h3>
+        <a href="https://ecommerce-project-mvp.vercel.app/" target="_blank">
+          <img src="imgs/e-commerce-homepage.jpg" alt="Thrive Loom E-Commerce MVP" id="thumbnails">
+        </a>
+        <figcaption>A screenshot of the e-commerce platform MVP.</figcaption>
+      </figure>
+      <h4>Project Overview:</h4>
+      <p>This minimal viable product for an e-commerce platform was built using React, showcasing essential features like product listing, shopping cart functionality, and a streamlined checkout process.</p>
+      <a href="https://github.com/tmstani23/E-Commerce-MVP" target="_blank" class="btn">View Github Repository</a>
+      <h4>Technologies Used:</h4>
+      <p>React, Local Storage, JavaScript, HTML, CSS</p>
     </div>
-    <div class="row">
-      <div class="col-md-7 align-items-center justify-content-center "> 
-        <h3>Professional Experience</h3>
-          <h4><strong>Web Developer,</strong> 3M - Maplewood, MN - December 2017 to Present</h4>
-        <ul> 
-          <li>Handled technical issues and design pattern flaws.</li>
-          <li>Advised 3M partners on technical specifications and usage.</li>
-          <li>Initiated site configuration file creation and maintenance.</li>
-          <li>Centralized and overhauled technical clarification documentation.</li>
-          <li>Scrutinized new site capabilities.</li>
-          <li>Standardized site themes across global web platform.</li>
-          <li>Screened new Design Pattern Library components.</li>
-        </ul>
-        <h4><strong>Software Development Freelance,</strong> August 2014 to Present</h4>
-        <ul> 
-          <li>Achieved certification in freeCodeCamp’s front end libraries React course.</li>
-          <li>Engineered a Bayesian probability calculator using React, CSS Grid and Flexbox.</li>
-          <li>Designed and implemented a Github top repository viewer application using React and Javascript.</li>
-          <li>Built a Simon memory application using CSS Grid and Javascript</li>
-          <li>Awarded certification in the freeCodeCamp front end online bootcamp.</li>
-          <li>Devised and organized two libraries of algorithms in Javascript.</li>
-          <li>Achieved completion of Code Academy, Khan Academy, Javascript, Html and CSS courses.</li>
-        </ul>
-    </div>
-      
-      <div class="col-md-5 justify-content-center hard-center-flex"> 
-          
-          <h3>Education</h3>
-          <img src="imgs/education1.jpg"  class="img-responsive"; id="edu-image"; alt="Responsive image">
-          <h4><strong>Front End Development Certification in Software Development Engineering, </strong> freeCodeCamp - January 2017 to March 2018</h4>
-          <h4><strong>Landscape Architecture Master&#8217s Program, </strong> University of Minnesota - Minneapolis, Minnesota 2010-2011</h4>
-          <h4><strong>B.S. Journalism, Print Journalism,</strong> University of Wisconsin - River Falls, Wisconsin 2005-2009</h4>
-          <h4><strong>Minor - History, </strong> University of Wisconsin - River Falls, Wisconsin 2005-2009</h4>
-      </div>
-      
 
-    </div>
-    <!-- <div class="row">
-     
-    </div> -->
   
+    <!-- Creature Simulation -->
+    <div class="col-md-5 profile-pane">
+      <figure>
+        <h3>Creature Simulation</h3>
+        <a href="https://evo-simulation.vercel.app/" target="_blank">
+          <img src="imgs/evo-sim-homepage.png" alt="Creature Simulation" id="thumbnails">
+        </a>
+        <figcaption>A screenshot of the creature simulation.</figcaption>
+      </figure>
+      <h4>Project Overview:</h4>
+      <p>This web-based creature simulation uses genetic algorithms and neural networks to simulate creature movement, health management, and genetic variability within a dynamic grid environment.</p>
+      <a href="https://github.com/tmstani23/Evo-Simulation" target="_blank" class="btn">View Github Repository</a>
+      <h4>Technologies Used:</h4>
+      <p>JavaScript, HTML, CSS, Neural Networks, Genetic Algorithms</p>
+    </div>
   </div>
   
-  <!-- Contact Information Section -->
-  <div class="container-fluid" id="contact-section">
-    <div class="row">
-      <div class="col-md-12 justify-content-center align-items-center">  
-        <h2 class="box-header">Contact</h2>
-        <p id="contact-summary">View the below links for examples of my work and professional spaces.  I would love to hear from you about job possibilities, constructive criticism, and opportunities for collaboration.  
-        If you just want to chat about software or technology in general feel free to contact me as well!  
-        The best way to contact me is through the email button below.</p>
-        <div id = "icons-div"> 
-          <a href="mailto:tmstani23@gmail.com" class="fas fa-envelope fa-3x icon-buttons" role="button"></a>
-          <a href="https://github.com/tmstani23" class="fab fa-github-square fa-3x icon-buttons" role="button"></a>
-          <a href="https://www.facebook.com/tim.stanislav" class="fab fa-facebook-square fa-3x icon-buttons"; role="button"></a> 
-          <a href="https://www.linkedin.com/in/timothy-stanislav-54874b13/" class="fab fa-linkedin fa-3x icon-buttons"; role="button"></a>
-          <a href="https://codepen.io/tmstani23/#" class="fab fa-codepen fa-3x icon-buttons"; role="button"></a>
+  <div class="row justify-content-center align-items-center">  
+    <!-- JS Calculator -->
+    <div class="col-md-5 profile-pane">
+      <figure>
+        <h3>JS Calculator</h3>
+        <a href="https://tmstani23.github.io/JS-Calculator/" target="_blank">
+          <img src="imgs/calc1.jpg" alt="JS Calculator" id="thumbnails">
+        </a>
+        <figcaption>The initial state of the calculator.</figcaption>
+      </figure>
+      <h4>Project Overview:</h4>
+      <p>This browser-based calculator supports operations on previous results, function chaining, and features a clean and intuitive interface for effective usability.</p>
+      <a href="https://github.com/tmstani23/JS-Calculator" target="_blank" class="btn">View Github Repository</a>
+      <h4>Technologies Used:</h4>
+      <p>JavaScript, HTML, CSS</p>
+    </div>
+
+    <!-- Tic-Tac-Toe -->
+    <div class="col-md-5 profile-pane">
+      <figure>
+        <h3>Tic-Tac-Toe</h3>
+        <a href="https://tmstani23.github.io/Tic-Tac-Toe/" target="_blank">
+          <img src="imgs/tictac1.jpg" alt="Tic-Tac-Toe" id="thumbnails">
+        </a>
+        <figcaption>A screenshot of the tie state in the game.</figcaption>
+      </figure>
+      <h4>Project Overview:</h4>
+      <p>This Tic-Tac-Toe game features an almost unbeatable AI opponent, alongside options for resetting the game and receiving status updates during gameplay.</p>
+      <a href="https://github.com/tmstani23/Tic-Tac-Toe" target="_blank" class="btn">View Github Repository</a>
+      <h4>Technologies Used:</h4>
+      <p>JavaScript, HTML, CSS</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Resume Section -->
+    <div class="container-fluid bg-light py-5" id="resume-section">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-4">Download My Resume</h2>
+          <p class="mb-4">Interested in learning more about my background and skills? Download my resume to discover more about my experience and qualifications.</p>
+          <a href="resume.pdf" class="btn btn-resume-download btn-lg">
+            <i class="fas fa-download mr-2"></i> Download Resume
+          </a>
         </div>
-        <p id="trademark">This site was built with Javascript, Bootstrap, HTML and CSS <br>
-          Created by: Timothy Stanislav - 
-            <img src="imgs/goldblackwings.png" class="brand-image">
-           IndoorKin Productions &copy;</p>
       </div>
     </div>
-  </div>  
 
+    <!-- Contact Section with Centered Social Icons -->
+<div class="container-fluid" id="contact-section">
+  <div class="row">
+    <div class="col-md-12 justify-content-center align-items-center">
+      <h2 class="box-header">Contact</h2>
+      <p id="contact-summary">I welcome inquiries about job opportunities, constructive feedback, and collaboration possibilities. Feel free to reach out through the links below to discuss any project ideas or just to chat about software and technology.</p>
+      <div id="icons-div">
+        <a href="mailto:tmstani23@gmail.com" class="fas fa-envelope fa-3x icon-buttons" role="button"></a>
+        <a href="https://github.com/tmstani23" class="fab fa-github-square fa-3x icon-buttons" role="button"></a>
+        <a href="https://www.linkedin.com/in/timothy-stanislav-54874b13/" class="fab fa-linkedin fa-3x icon-buttons" role="button"></a>
+        <a href="https://x.com/ThriveLoom" class="fab fa-twitter fa-3x icon-buttons" role="button"></a>
+      </div>
+      <p id="trademark">This site was built with JavaScript, Bootstrap, HTML, and CSS <br> Created by: Timothy Stanislav - <img src="imgs/goldblackwings.png" class="brand-image"> Thrive Loom &copy;</p>
+    </div>
+  </div>
+</div>
 
-  <!-- Bootstrap JS and Jquery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-  <!-- Brand Icon -->
-  <link rel="icon" href="imgs/goldblackwings.png" type="image/png" /> 
-  
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- Brand Icon -->
+    <link rel="icon" href="imgs/goldblackwings.png" type="image/png" /> 
+    
   </body>
-
 </html>
