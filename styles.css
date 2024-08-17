@@ -11,6 +11,9 @@
   --slate_gray: #545c5c;
   --black: #140f12;
   --highlight_blue: #3c74c0;
+  --modern_dark_green: #2a3d2f; /* Dark, modern green */
+  --modern_gray: #3b3b3b; /* Neutral gray */
+  --modern_light_gray: #f2f2f2; /* Light gray for text */
 }
 
 body {
@@ -134,34 +137,45 @@ hr {
 /* Container for the text section below the banner */
 .text-section {
   padding: 40px 0;
-  background-color: var(--medium_light_gray);
+  background-color: var(--modern_gray); /* Neutral gray background */
 }
 
+
+/* Text Overlay */
 .banner-text-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(42, 61, 47, 0.3); /* Translucent dark green overlay */
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  max-width: 80%; /* Restrict width for readability */
+  margin: 0 auto; /* Center the box */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
+/* Main Heading */
 .banner-title {
-  color: var(--soft_white);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  color: var(--modern_light_gray); /* Light gray text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Slightly darker shadow for contrast */
+  font-size: 3rem; /* Larger font size */
+  margin-bottom: 20px; /* Increase spacing */
+  text-align: center; /* Center align */
+  line-height: 1.2; /* Improved line height */
+}
+
+/* Subheading */
+.banner-summary {
+  font-size: 1.8rem; /* Larger font size */
+  font-weight: 300;
+  color: var(--modern_light_gray); /* Light gray subtext */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  text-align: center; /* Center align */
+  line-height: 1.4; /* Improved line height */
 }
 
 .banner-subtext {
   color: var(--soft_white);
   font-size: 1.2rem;
   margin-top: 10px;
-}
-
-.banner-summary {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: var(--soft_white);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  margin: 20px auto;
 }
 
 #nav-section {
@@ -204,17 +218,23 @@ hr {
 }
 
 .portfolio-header {
+  color: var(--modern_dark_green); /* Use the modern dark green color */
+  font-size: 6rem; /* Larger font size */
+  font-weight: bold; /* Make the text bolder */
+  margin-bottom: 15px;
   text-align: center;
-  color: var(--highlight_blue);
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+  display: inline-block; /* Fit the underline to the text width */
 }
 
+  /* Subheading */
 .portfolio-subtext {
+  font-size: 1.2rem; /* Keep the subtext font size */
+  color: var(--slate_gray); /* Use a lighter gray for subtext */
   text-align: center;
-  font-size: 1.2rem;
-  color: var(--medium_gray);
   margin-bottom: 20px;
+  max-width: 70%; /* Limit the width for better readability */
+  margin: 0 auto; /* Center the subtext */
 }
 
 #port-section {
@@ -228,12 +248,6 @@ hr {
   justify-content: center;
   text-align: center;
   margin-bottom: 30px;
-}
-
-#port-summary h2 {
-  color: var(--highlight_blue);
-  margin-bottom: 10px;
-  font-size: 2rem;
 }
 
 #port-summary h5 {
@@ -263,6 +277,7 @@ hr {
   margin-bottom: 30px; /* Space below each profile pane */
   margin-left: auto; /* Align to the left */
   margin-right: auto; /* Align to the right */
+  min-height: 620px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -271,11 +286,15 @@ hr {
 }
 
 
+/* Portfolio Project Panel Headings */
 .profile-pane h3 {
-  color: var(--highlight_blue);
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 2px var(--deep_black);
+  color: var(--modern_dark_green); /* Dark green text for the heading */
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--modern_dark_green); /* Subtle underline using the same dark green */
   text-align: center;
+  margin-bottom: 20px; /* Ensure spacing below the heading */
+  font-size: 1.8rem; /* Adjust font size for readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 .profile-pane p {
@@ -323,18 +342,24 @@ a img {
 .brand-image {
   height: 40px;
   width: 40px;
-  margin: 10px;
+  margin: 0 15px;
 }
 
 #trademark {
-  font-size: 14px;
-  color: var(--soft_white);
   display: flex;
-  justify-content: center;
-  align-items: vertical;
-  gap: 5px;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  gap: 10px; /* Adds spacing between the elements */
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--forest_green);
   text-align: center;
-  padding: 40px;
+  margin-top: 20px;
+  padding: 10px 0; /* Adds some padding to ensure it has space */
+}
+
+.trademark-text {
+  margin: 0 10px; /* Adds space around the text */
 }
 
 #contact-section {
@@ -369,14 +394,6 @@ a img {
 
 .icon-buttons:hover {
   color: var(--soft_white);
-}
-
-#trademark {
-  font-style: italic;
-  font-size: 1rem;
-  color: var(--forest_green);
-  text-align: center;
-  margin-top: 20px;
 }
 
 @-webkit-keyframes thumbFlash {
@@ -479,15 +496,25 @@ a img {
     font-size: 20px;
   }
 
+  /* Portfolio Section Heading */
   .portfolio-header {
-    font-size: 2rem;
+    color: var(--modern_dark_green); /* Use the modern dark green color */
+    font-size: 6rem; /* Larger font size */
+    font-weight: bold; /* Make the text bolder */
+    margin-bottom: 6rem;
     text-align: center;
-    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+    border-bottom: 3px solid var(--modern_dark_green); /* Add an underline */
+    display: inline-block; /* Fit the underline to the text width */
   }
 
+    /* Subheading */
   .portfolio-subtext {
-    font-size: 1rem;
+    font-size: 1.2rem; /* Keep the subtext font size */
+    color: var(--slate_gray); /* Use a lighter gray for subtext */
     text-align: center;
     margin-bottom: 20px;
+    max-width: 70%; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the subtext */
   }
 }
